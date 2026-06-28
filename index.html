@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hamna Fazil — Aspiring Data Analyst portfolio. Power BI dashboards, SQL analysis, Python analytics, and business intelligence projects.">
+  <meta name="keywords" content="Data Analyst, Power BI, SQL, Python, Business Intelligence, Hamna Fazil">
+  <meta name="author" content="Hamna Fazil">
+  <title>Hamna Fazil | Data Analyst Portfolio</title>
+
+  <!-- Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo">Hamna Fazil</a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#certifications" class="nav__link">Certifications</a></li>
+        <li><a href="#resume" class="nav__link">Resume</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <svg class="hero__pattern" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563EB" stroke-width="0.5" opacity="0.15"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#grid)"/>
+          <circle cx="650" cy="120" r="80" fill="#2563EB" opacity="0.06"/>
+          <circle cx="150" cy="450" r="120" fill="#2563EB" opacity="0.04"/>
+          <polyline points="100,300 200,250 300,280 400,200 500,220 600,150 700,180"
+                    fill="none" stroke="#2563EB" stroke-width="2" opacity="0.2"/>
+          <polyline points="100,380 250,340 400,360 550,300 700,320"
+                    fill="none" stroke="#1F2937" stroke-width="1.5" opacity="0.12"/>
+        </svg>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">Hamna Fazil</h1>
+        <h2 class="hero__title">Aspiring Data Analyst | Business Intelligence Enthusiast</h2>
+        <p class="hero__tagline">"Turning raw data into meaningful business insights using Power BI and analytics"</p>
+
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="images/resume.pdf" class="btn btn--outline" download>Download Resume</a>
+          <a href="#contact" class="btn btn--secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">About Me</span>
+          <h2 class="section__title">Who I Am</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="images/profile-placeholder.svg" alt="Hamna Fazil — Data Analyst student" width="400" height="400" loading="lazy">
+          </div>
+
+          <div class="about__text">
+            <p>
+              I am an <strong>IT undergraduate student</strong> with a deep passion for
+              <strong>Data Analytics</strong>, <strong>Power BI</strong>, <strong>SQL</strong>, and
+              <strong>Python</strong>. I enjoy transforming complex datasets into clear, actionable
+              insights that drive smarter business decisions.
+            </p>
+            <p>
+              Since 2020, I have been teaching <strong>Mathematics</strong> and <strong>ICT</strong>,
+              which has strengthened my communication skills and ability to explain technical concepts
+              to diverse audiences.
+            </p>
+            <p>
+              I bring strong <strong>problem-solving</strong> abilities and a detail-oriented mindset
+              to every project. My career goal is to become a professional <strong>Data Analyst</strong>
+              and contribute to data-driven organizations.
+            </p>
+
+            <ul class="about__highlights">
+              <li>IT Undergraduate Student</li>
+              <li>Teaching Experience since 2020</li>
+              <li>Power BI &amp; SQL Enthusiast</li>
+              <li>Goal: Professional Data Analyst</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Expertise</span>
+          <h2 class="section__title">Skills &amp; Tools</h2>
+        </header>
+
+        <div class="skills__grid">
+
+          <!-- Technical Skills -->
+          <article class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Technical</h3>
+            <ul class="skill-card__list">
+              <li>Excel <span>(Advanced)</span></li>
+              <li>SQL <span>(Joins, CTEs, Window Functions)</span></li>
+              <li>Power BI <span>(Dashboards, DAX)</span></li>
+              <li>Python <span>(Pandas, NumPy, Matplotlib)</span></li>
+            </ul>
+          </article>
+
+          <!-- Tools -->
+          <article class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Tools</h3>
+            <ul class="skill-card__list">
+              <li>Power BI</li>
+              <li>Excel</li>
+              <li>MySQL</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <!-- Soft Skills -->
+          <article class="skill-card">
+            <div class="skill-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="skill-card__title">Soft Skills</h3>
+            <ul class="skill-card__list">
+              <li>Communication</li>
+              <li>Critical Thinking</li>
+              <li>Problem Solving</li>
+              <li>Presentation</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Portfolio</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__subtitle">Data analysis and visualization projects showcasing my analytical skills</p>
+        </header>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/project-netflix.svg" alt="Netflix Data Analysis Dashboard preview" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Netflix Data Analysis Dashboard</h3>
+              <p class="project-card__desc">
+                Interactive Power BI dashboard analyzing Netflix content trends, genre distribution,
+                and regional availability to uncover viewing patterns.
+              </p>
+              <div class="project-card__meta">
+                <span class="project-card__tools">Power BI · DAX · Excel</span>
+                <p class="project-card__insight">
+                  <strong>Key Insight:</strong> Drama and international content dominate the catalog,
+                  with significant growth in non-English titles since 2018.
+                </p>
+              </div>
+              <a href="https://github.com/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/project-ecommerce.svg" alt="E-Commerce Sales Dashboard preview" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">E-Commerce Sales Dashboard</h3>
+              <p class="project-card__desc">
+                Comprehensive sales analytics dashboard tracking revenue, order trends, product
+                performance, and customer behavior across multiple regions.
+              </p>
+              <div class="project-card__meta">
+                <span class="project-card__tools">Power BI · SQL · Excel</span>
+                <p class="project-card__insight">
+                  <strong>Key Insight:</strong> Q4 sales spike by 34% driven by electronics category,
+                  with repeat customers contributing 62% of total revenue.
+                </p>
+              </div>
+              <a href="https://github.com/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/project-hr.svg" alt="HR Analytics Dashboard preview" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">HR Analytics Dashboard</h3>
+              <p class="project-card__desc">
+                Employee analytics dashboard covering attrition rates, department performance,
+                salary distribution, and workforce demographics.
+              </p>
+              <div class="project-card__meta">
+                <span class="project-card__tools">Power BI · DAX · Excel</span>
+                <p class="project-card__insight">
+                  <strong>Key Insight:</strong> Sales department shows highest attrition at 21%,
+                  correlated with overtime hours and low job satisfaction scores.
+                </p>
+              </div>
+              <a href="https://github.com/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/project-sql.svg" alt="SQL Retail Analysis Project preview" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">SQL Retail Analysis Project</h3>
+              <p class="project-card__desc">
+                End-to-end retail data analysis using advanced SQL queries with joins, CTEs,
+                and window functions to evaluate store and product performance.
+              </p>
+              <div class="project-card__meta">
+                <span class="project-card__tools">MySQL · SQL · Excel</span>
+                <p class="project-card__insight">
+                  <strong>Key Insight:</strong> Top 15% of products generate 78% of revenue,
+                  highlighting opportunities for inventory optimization.
+                </p>
+              </div>
+              <a href="https://github.com/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/project-segmentation.svg" alt="Customer Segmentation Analysis preview" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Customer Segmentation Analysis</h3>
+              <p class="project-card__desc">
+                Python-based RFM analysis and clustering to segment customers and identify
+                high-value groups for targeted marketing strategies.
+              </p>
+              <div class="project-card__meta">
+                <span class="project-card__tools">Python · Pandas · Matplotlib</span>
+                <p class="project-card__insight">
+                  <strong>Key Insight:</strong> 12% of customers classified as "Champions"
+                  account for 48% of total lifetime value.
+                </p>
+              </div>
+              <a href="https://github.com/" class="btn btn--sm btn--primary" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS SECTION ========== -->
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Credentials</span>
+          <h2 class="section__title">Certifications</h2>
+        </header>
+
+        <div class="certifications__grid">
+          <article class="cert-card">
+            <div class="cert-card__badge">PBI</div>
+            <h3 class="cert-card__title">Power BI Certification</h3>
+            <p class="cert-card__desc">Data visualization, DAX, and dashboard design</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-card__badge">SQL</div>
+            <h3 class="cert-card__title">SQL Course</h3>
+            <p class="cert-card__desc">Advanced queries, joins, and database management</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-card__badge">PY</div>
+            <h3 class="cert-card__title">Python Course</h3>
+            <p class="cert-card__desc">Data analysis with Pandas, NumPy, and Matplotlib</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-card__badge">GDA</div>
+            <h3 class="cert-card__title">Google Data Analytics</h3>
+            <p class="cert-card__desc">Foundations of data analytics and business intelligence</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME SECTION ========== -->
+    <section class="section resume" id="resume">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">CV</span>
+          <h2 class="section__title">Resume</h2>
+        </header>
+
+        <div class="resume__content">
+          <div class="resume__summary">
+            <h3>Professional Summary</h3>
+            <p>
+              Motivated IT undergraduate and aspiring Data Analyst with hands-on experience in
+              Power BI dashboard development, SQL data querying, and Python-based analysis.
+              Proven ability to translate complex data into clear business insights, backed by
+              teaching experience in Mathematics and ICT since 2020.
+            </p>
+            <ul class="resume__qualifications">
+              <li>Bachelor's in Information Technology (In Progress)</li>
+              <li>Power BI Dashboards &amp; DAX</li>
+              <li>Advanced SQL &amp; MySQL</li>
+              <li>Python for Data Analysis</li>
+              <li>Mathematics &amp; ICT Teaching (2020 – Present)</li>
+            </ul>
+          </div>
+
+          <div class="resume__download">
+            <svg class="resume__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <polyline points="9 15 12 18 15 15"/>
+            </svg>
+            <p>Download my full resume to learn more about my education, skills, and experience.</p>
+            <a href="images/resume.pdf" class="btn btn--primary btn--lg" download>Download Resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__label">Get In Touch</span>
+          <h2 class="section__title">Contact Me</h2>
+          <p class="section__subtitle">Open to data analyst internships and entry-level opportunities</p>
+        </header>
+
+        <div class="contact__grid">
+          <!-- Contact Info -->
+          <div class="contact__info">
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:hamna.fazil@email.com">hamna.fazil@email.com</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/hamnafazil" target="_blank" rel="noopener noreferrer">linkedin.com/in/hamnafazil</a>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/hamnafazil" target="_blank" rel="noopener noreferrer">github.com/hamnafazil</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="contact-form" novalidate>
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p class="footer__copy">&copy; 2026 Hamna Fazil. All rights reserved.</p>
+
+      <div class="footer__social">
+        <a href="https://linkedin.com/in/hamnafazil" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/hamnafazil" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
