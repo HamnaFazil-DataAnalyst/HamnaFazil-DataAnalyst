@@ -396,6 +396,9 @@ ul {
   box-shadow: var(--shadow-md);
   max-width: 360px;
   width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .about__text p {
